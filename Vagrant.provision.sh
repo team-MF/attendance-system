@@ -49,10 +49,10 @@ echo "ServerName localhost" > /etc/apache2/httpd.conf
 # Setup hosts file
 VHOST=$(cat <<EOF
     <VirtualHost *:80>
-      DocumentRoot "/var/www/app/public"
+      DocumentRoot "/var/www/public"
       ServerName app.dev
       ServerAlias app.dev
-      <Directory "/var/www/app/public">
+      <Directory "/var/www/public">
         AllowOverride All
         Require all granted
       </Directory>
