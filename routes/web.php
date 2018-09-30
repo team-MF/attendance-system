@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('/sample', function() {
+// Route::get('/sample', function() {
+//     return view('app.app')
+//         ->with([
+//             'pageTitle' => 'サンプル',
+//             'viewName' => 'sample',
+//         ]);
+// });
+
+Route::get('/', function() {
     return view('app.app')
         ->with([
-            'pageTitle' => 'サンプル',
-            'viewName' => 'sample',
+            'pageTitle' => 'トップ',
+            'viewName' => 'top',
         ]);
 });

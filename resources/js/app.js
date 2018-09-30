@@ -22,11 +22,13 @@ Vue.use(Buefy)
  */
 
 // common components
-Vue.component('header-bar', require('./sample/components/HeaderBar.vue'))
-Vue.component('dropdown-btn', require('./sample/components/DropdownBtn.vue'))
+Vue.component('header-bar', require('./components/HeaderBar.vue'))
 
 // parent components
-Vue.component('sample', require('./sample/views/Sample.vue'))
+Vue.component('top', require('./views/Top.vue'))
+
+// child components
+Vue.component('time-stamp', require('./components/top/TimeStamp.vue'))
 
 const app = new Vue({
     el: '#app'
