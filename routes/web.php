@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('master');
+Route::get('/sample', function() {
+    return view('app.app')
+        ->with([
+            'pageTitle' => 'サンプル',
+            'viewName' => 'sample',
+        ]);
 });
